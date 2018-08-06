@@ -1,0 +1,82 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style type="text/css">
+    </style>
+    <script src="@Url.Content("~/Scripts/jquery-3.3.1.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-3.3.1.js")" type="text/javascript"></script>
+    <script type="text/javascript">
+        var TicketUsedData_API_URL = "http://localhost:12213/TicketUsedData/";
+        var TicketUsedQuery_API_URL = "http://localhost:12213/TicketUsedQuery/";
+
+        //POST TEST
+        function post_TicketUsedData() {
+            var json = JSON.stringify({ Channel: $("#Channel").val(), Start_Time: $("#Start_Time").val(), End_Time: $("#End_Time").val() });
+
+            $.ajax({
+                url: TicketUsedData_API_URL,
+                headers: {
+                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Methods': 'HEAD, GET, POST, PUT, PATCH, DELETE',
+                    'Access-Control-Allow-Headers': 'Origin, Content-Type, X-Auth-Token'
+                },
+                cache: false,
+                type: 'POST',
+                contentType: 'application/json; charset=utf-8',
+                data: json,
+                crossDomain: true,
+                statusCode: {
+                    201 /*Created*/: function (data) {
+                        alert("POST成功");
+                    }
+                }
+            });
+        }
+
+        function post_TicketUsedQuery() {
+            var json = JSON.stringify({ Channel: $("#Channel").val(), QR_CODE: $("#QR_CODE").val() });
+
+            $.ajax({
+                url: TicketUsedQuery_API_URL,
+                headers: {
+                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Methods': 'HEAD, GET, POST, PUT, PATCH, DELETE',
+                    'Access-Control-Allow-Headers': 'Origin, Content-Type, X-Auth-Token'
+                },
+                cache: false,
+                type: 'POST',
+                contentType: 'application/json; charset=utf-8',
+                data: json,
+                crossDomain: true,
+                statusCode: {
+                    201 /*Created*/: function (data) {
+                        alert("POST成功");
+                    }
+                }
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <p>post_TicketUsedData</p>
+        Channel<input type="text" title="Channel" id="Channel" />
+        Start_Time<input type="text" title="Start_Time" id="Start_Time" />
+        End_Time<input type="text" title="End_Time" id="End_Time" />
+        <input type="button" value="POST" onclick="post_TicketUsedData();" />
+    </div>
+
+    <div>
+        <p>post_TicketUsedQuery</p>
+        Channel<input type="text" title="Channel" id="Channel" />
+        QR_CODE<input type="text" title="QR_CODE" id="QR_CODE" />
+        <input type="button" value="POST" onclick="post_TicketUsedQuery();" />
+    </div>
+</body>
+</html>

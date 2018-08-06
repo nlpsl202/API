@@ -1,0 +1,20 @@
+c:\users\mds_userz\documents\visual studio 2013\Projects\iBonTicketCount\iBonTicketCount\bin\Debug\iBonTicketCount.exe.config
+c:\users\mds_userz\documents\visual studio 2013\Projects\iBonTicketCount\iBonTicketCount\obj\Debug\iBonTicketCount.csprojResolveAssemblyReference.cache
+c:\users\mds_userz\documents\visual studio 2013\Projects\iBonTicketCount\iBonTicketCount\obj\Debug\iBonTicketCount.Form1.resources
+c:\users\mds_userz\documents\visual studio 2013\Projects\iBonTicketCount\iBonTicketCount\obj\Debug\iBonTicketCount.Properties.Resources.resources
+c:\users\mds_userz\documents\visual studio 2013\Projects\iBonTicketCount\iBonTicketCount\obj\Debug\iBonTicketCount.csproj.GenerateResource.Cache
+c:\users\mds_userz\documents\visual studio 2013\Projects\iBonTicketCount\iBonTicketCount\bin\Debug\iBonTicketCount.exe
+c:\users\mds_userz\documents\visual studio 2013\Projects\iBonTicketCount\iBonTicketCount\bin\Debug\iBonTicketCount.pdb
+c:\users\mds_userz\documents\visual studio 2013\Projects\iBonTicketCount\iBonTicketCount\bin\Debug\Newtonsoft.Json.dll
+c:\users\mds_userz\documents\visual studio 2013\Projects\iBonTicketCount\iBonTicketCount\obj\Debug\iBonTicketCount.exe
+c:\users\mds_userz\documents\visual studio 2013\Projects\iBonTicketCount\iBonTicketCount\obj\Debug\iBonTicketCount.pdb
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBonTicketCount\iBonTicketCount\bin\Debug\iBonTicketCount.exe.config
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBonTicketCount\iBonTicketCount\obj\Debug\iBonTicketCount.exe
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBonTicketCount\iBonTicketCount\obj\Debug\iBonTicketCount.pdb
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBonTicketCount\iBonTicketCount\bin\Debug\iBonTicketCount.exe
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBonTicketCount\iBonTicketCount\bin\Debug\iBonTicketCount.pdb
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBonTicketCount\iBonTicketCount\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBonTicketCount\iBonTicketCount\obj\Debug\iBonTicketCount.csprojResolveAssemblyReference.cache
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBonTicketCount\iBonTicketCount\obj\Debug\iBonTicketCount.Form1.resources
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBonTicketCount\iBonTicketCount\obj\Debug\iBonTicketCount.Properties.Resources.resources
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBonTicketCount\iBonTicketCount\obj\Debug\iBonTicketCount.csproj.GenerateResource.Cache
