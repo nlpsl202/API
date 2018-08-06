@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetTicketData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="jsonSting" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTicketDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTicketDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckTicketData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="jsonSting" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckTicketDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckTicketDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckConnection">
+        <s:complexType />
+      </s:element>
+      <s:element name="CheckConnectionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckConnectionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTicketCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="jsonSting" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTicketCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTicketCountResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetTicketDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTicketData" />
+  </wsdl:message>
+  <wsdl:message name="GetTicketDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTicketDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckTicketDataSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckTicketData" />
+  </wsdl:message>
+  <wsdl:message name="CheckTicketDataSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckTicketDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckConnectionSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckConnection" />
+  </wsdl:message>
+  <wsdl:message name="CheckConnectionSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckConnectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTicketCountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTicketCount" />
+  </wsdl:message>
+  <wsdl:message name="GetTicketCountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTicketCountResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ibonTicketSoap">
+    <wsdl:operation name="GetTicketData">
+      <wsdl:input message="tns:GetTicketDataSoapIn" />
+      <wsdl:output message="tns:GetTicketDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckTicketData">
+      <wsdl:input message="tns:CheckTicketDataSoapIn" />
+      <wsdl:output message="tns:CheckTicketDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckConnection">
+      <wsdl:input message="tns:CheckConnectionSoapIn" />
+      <wsdl:output message="tns:CheckConnectionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketCount">
+      <wsdl:input message="tns:GetTicketCountSoapIn" />
+      <wsdl:output message="tns:GetTicketCountSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ibonTicketSoap" type="tns:ibonTicketSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetTicketData">
+      <soap:operation soapAction="http://tempuri.org/GetTicketData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckTicketData">
+      <soap:operation soapAction="http://tempuri.org/CheckTicketData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckConnection">
+      <soap:operation soapAction="http://tempuri.org/CheckConnection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketCount">
+      <soap:operation soapAction="http://tempuri.org/GetTicketCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ibonTicketSoap12" type="tns:ibonTicketSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetTicketData">
+      <soap12:operation soapAction="http://tempuri.org/GetTicketData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckTicketData">
+      <soap12:operation soapAction="http://tempuri.org/CheckTicketData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckConnection">
+      <soap12:operation soapAction="http://tempuri.org/CheckConnection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketCount">
+      <soap12:operation soapAction="http://tempuri.org/GetTicketCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ibonTicket">
+    <wsdl:port name="ibonTicketSoap" binding="tns:ibonTicketSoap">
+      <soap:address location="http://210.61.47.134/QWARE_TICKET_ADMIN/WebServices/ibonTicket.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ibonTicketSoap12" binding="tns:ibonTicketSoap12">
+      <soap12:address location="http://210.61.47.134/QWARE_TICKET_ADMIN/WebServices/ibonTicket.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

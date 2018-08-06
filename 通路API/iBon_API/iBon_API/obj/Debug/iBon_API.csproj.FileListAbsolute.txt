@@ -1,0 +1,40 @@
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBonTicketCount\iBonTicketCount\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBonTicketCount\iBonTicketCount\obj\Debug\iBon_API.csproj.GenerateResource.Cache
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBonTicketCount\iBonTicketCount\bin\Debug\iBon_API.exe.config
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBonTicketCount\iBonTicketCount\bin\Debug\iBon_API.exe
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBonTicketCount\iBonTicketCount\bin\Debug\iBon_API.pdb
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBonTicketCount\iBonTicketCount\obj\Debug\iBon_API.Form1.resources
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBonTicketCount\iBonTicketCount\obj\Debug\iBon_API.Properties.Resources.resources
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBonTicketCount\iBonTicketCount\obj\Debug\iBon_API.exe
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBonTicketCount\iBonTicketCount\obj\Debug\iBon_API.pdb
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBonTicketCount\iBonTicketCount\obj\Debug\iBon_API.csprojResolveAssemblyReference.cache
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBon_API\iBonTicketCount\bin\Debug\iBon_API.exe.config
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBon_API\iBonTicketCount\obj\Debug\iBon_API.exe
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBon_API\iBonTicketCount\obj\Debug\iBon_API.pdb
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBon_API\iBonTicketCount\bin\Debug\iBon_API.exe
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBon_API\iBonTicketCount\bin\Debug\iBon_API.pdb
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBon_API\iBonTicketCount\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBon_API\iBonTicketCount\obj\Debug\iBon_API.csprojResolveAssemblyReference.cache
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBon_API\iBonTicketCount\obj\Debug\iBon_API.Form1.resources
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBon_API\iBonTicketCount\obj\Debug\iBon_API.Properties.Resources.resources
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBon_API\iBonTicketCount\obj\Debug\iBon_API.csproj.GenerateResource.Cache
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBon_API\iBon_API\bin\Debug\iBon_API.exe.config
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBon_API\iBon_API\obj\Debug\iBon_API.exe
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBon_API\iBon_API\obj\Debug\iBon_API.pdb
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBon_API\iBon_API\bin\Debug\iBon_API.exe
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBon_API\iBon_API\bin\Debug\iBon_API.pdb
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBon_API\iBon_API\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBon_API\iBon_API\obj\Debug\iBon_API.csprojResolveAssemblyReference.cache
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBon_API\iBon_API\obj\Debug\iBon_API.Form1.resources
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBon_API\iBon_API\obj\Debug\iBon_API.Properties.Resources.resources
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBon_API\iBon_API\obj\Debug\iBon_API.csproj.GenerateResource.Cache
+C:\Users\mds_userz\Desktop\通路API\iBon_API\iBon_API\bin\Debug\iBon_API.exe.config
+C:\Users\mds_userz\Desktop\通路API\iBon_API\iBon_API\obj\Debug\iBon_API.exe
+C:\Users\mds_userz\Desktop\通路API\iBon_API\iBon_API\obj\Debug\iBon_API.pdb
+C:\Users\mds_userz\Desktop\通路API\iBon_API\iBon_API\bin\Debug\iBon_API.exe
+C:\Users\mds_userz\Desktop\通路API\iBon_API\iBon_API\bin\Debug\iBon_API.pdb
+C:\Users\mds_userz\Desktop\通路API\iBon_API\iBon_API\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mds_userz\Desktop\通路API\iBon_API\iBon_API\obj\Debug\iBon_API.csprojResolveAssemblyReference.cache
+C:\Users\mds_userz\Desktop\通路API\iBon_API\iBon_API\obj\Debug\iBon_API.Form1.resources
+C:\Users\mds_userz\Desktop\通路API\iBon_API\iBon_API\obj\Debug\iBon_API.Properties.Resources.resources
+C:\Users\mds_userz\Desktop\通路API\iBon_API\iBon_API\obj\Debug\iBon_API.csproj.GenerateResource.Cache

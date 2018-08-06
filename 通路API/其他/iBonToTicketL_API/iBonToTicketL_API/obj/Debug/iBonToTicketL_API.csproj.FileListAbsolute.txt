@@ -1,0 +1,6 @@
+c:\users\mds_userz\documents\visual studio 2013\Projects\iBonToTicketL_API\iBonToTicketL_API\bin\iBonToTicketL_API.dll.config
+c:\users\mds_userz\documents\visual studio 2013\Projects\iBonToTicketL_API\iBonToTicketL_API\bin\iBonToTicketL_API.dll
+c:\users\mds_userz\documents\visual studio 2013\Projects\iBonToTicketL_API\iBonToTicketL_API\bin\iBonToTicketL_API.pdb
+c:\users\mds_userz\documents\visual studio 2013\Projects\iBonToTicketL_API\iBonToTicketL_API\obj\Debug\iBonToTicketL_API.csprojResolveAssemblyReference.cache
+c:\users\mds_userz\documents\visual studio 2013\Projects\iBonToTicketL_API\iBonToTicketL_API\obj\Debug\iBonToTicketL_API.dll
+c:\users\mds_userz\documents\visual studio 2013\Projects\iBonToTicketL_API\iBonToTicketL_API\obj\Debug\iBonToTicketL_API.pdb

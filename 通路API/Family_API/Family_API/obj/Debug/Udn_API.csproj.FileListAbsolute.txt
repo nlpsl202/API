@@ -1,0 +1,23 @@
+C:\Users\mds_userz\Documents\Visual Studio 2013\Projects\TicketNoToUdn\Udn_API\bin\Debug\TicketNoToUdn.exe.config
+C:\Users\mds_userz\Documents\Visual Studio 2013\Projects\TicketNoToUdn\Udn_API\obj\Debug\TicketNoToUdn.exe
+C:\Users\mds_userz\Documents\Visual Studio 2013\Projects\TicketNoToUdn\Udn_API\obj\Debug\TicketNoToUdn.pdb
+C:\Users\mds_userz\Documents\Visual Studio 2013\Projects\TicketNoToUdn\Udn_API\bin\Debug\TicketNoToUdn.exe
+C:\Users\mds_userz\Documents\Visual Studio 2013\Projects\TicketNoToUdn\Udn_API\bin\Debug\TicketNoToUdn.pdb
+C:\Users\mds_userz\Documents\Visual Studio 2013\Projects\TicketNoToUdn\Udn_API\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mds_userz\Documents\Visual Studio 2013\Projects\TicketNoToUdn\Udn_API\obj\Debug\Udn_API.csprojResolveAssemblyReference.cache
+C:\Users\mds_userz\Documents\Visual Studio 2013\Projects\TicketNoToUdn\Udn_API\obj\Debug\Udn_API.Form1.resources
+C:\Users\mds_userz\Documents\Visual Studio 2013\Projects\TicketNoToUdn\Udn_API\obj\Debug\TicketNoToUdn.Properties.Resources.resources
+C:\Users\mds_userz\Documents\Visual Studio 2013\Projects\TicketNoToUdn\Udn_API\obj\Debug\Udn_API.csproj.GenerateResource.Cache
+C:\Users\mds_userz\Desktop\通路API\Udn_API\Udn_API\bin\Debug\TicketNoToUdn.exe.config
+C:\Users\mds_userz\Desktop\通路API\Udn_API\Udn_API\obj\Debug\TicketNoToUdn.exe
+C:\Users\mds_userz\Desktop\通路API\Udn_API\Udn_API\obj\Debug\TicketNoToUdn.pdb
+C:\Users\mds_userz\Desktop\通路API\Udn_API\Udn_API\bin\Debug\TicketNoToUdn.exe
+C:\Users\mds_userz\Desktop\通路API\Udn_API\Udn_API\bin\Debug\TicketNoToUdn.pdb
+C:\Users\mds_userz\Desktop\通路API\Udn_API\Udn_API\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mds_userz\Desktop\通路API\Udn_API\Udn_API\obj\Debug\Udn_API.csprojResolveAssemblyReference.cache
+C:\Users\mds_userz\Desktop\通路API\Udn_API\Udn_API\obj\Debug\Udn_API.Form1.resources
+C:\Users\mds_userz\Desktop\通路API\Udn_API\Udn_API\obj\Debug\TicketNoToUdn.Properties.Resources.resources
+C:\Users\mds_userz\Desktop\通路API\Udn_API\Udn_API\obj\Debug\Udn_API.csproj.GenerateResource.Cache
+C:\Users\mds_userz\Desktop\通路API\其他\Family_API\Udn_API\bin\Debug\TicketNoToUdn.exe.config
+C:\Users\mds_userz\Desktop\通路API\其他\Family_API\Udn_API\obj\Debug\TicketNoToUdn.exe
+C:\Users\mds_userz\Desktop\通路API\其他\Family_API\Udn_API\obj\Debug\TicketNoToUdn.pdb

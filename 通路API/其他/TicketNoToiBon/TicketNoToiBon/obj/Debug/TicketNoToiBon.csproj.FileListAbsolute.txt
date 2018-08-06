@@ -1,0 +1,25 @@
+C:\Users\Ellen Lo\Desktop\TicketNoToiBon\TicketNoToiBon\bin\Debug\TicketNoToiBon.exe.config
+C:\Users\Ellen Lo\Desktop\TicketNoToiBon\TicketNoToiBon\bin\Debug\TicketNoToiBon.exe
+C:\Users\Ellen Lo\Desktop\TicketNoToiBon\TicketNoToiBon\bin\Debug\TicketNoToiBon.pdb
+C:\Users\Ellen Lo\Desktop\TicketNoToiBon\TicketNoToiBon\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ellen Lo\Desktop\TicketNoToiBon\TicketNoToiBon\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Ellen Lo\Desktop\TicketNoToiBon\TicketNoToiBon\obj\Debug\TicketNoToiBon.csprojResolveAssemblyReference.cache
+C:\Users\Ellen Lo\Desktop\TicketNoToiBon\TicketNoToiBon\obj\Debug\TicketNoToiBon.Form1.resources
+C:\Users\Ellen Lo\Desktop\TicketNoToiBon\TicketNoToiBon\obj\Debug\TicketNoToiBon.Properties.Resources.resources
+C:\Users\Ellen Lo\Desktop\TicketNoToiBon\TicketNoToiBon\obj\Debug\TicketNoToiBon.csproj.GenerateResource.Cache
+C:\Users\Ellen Lo\Desktop\TicketNoToiBon\TicketNoToiBon\obj\Debug\TicketNoToiBon.exe
+C:\Users\Ellen Lo\Desktop\TicketNoToiBon\TicketNoToiBon\obj\Debug\TicketNoToiBon.pdb
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\TicketNoToiBon\TicketNoToiBon\bin\Debug\TicketNoToiBon.exe.config
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\TicketNoToiBon\TicketNoToiBon\obj\Debug\TicketNoToiBon.exe
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\TicketNoToiBon\TicketNoToiBon\obj\Debug\TicketNoToiBon.pdb
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\TicketNoToiBon\TicketNoToiBon\bin\Debug\TicketNoToiBon.exe
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\TicketNoToiBon\TicketNoToiBon\bin\Debug\TicketNoToiBon.pdb
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\TicketNoToiBon\TicketNoToiBon\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\TicketNoToiBon\TicketNoToiBon\bin\Debug\Newtonsoft.Json.xml
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\TicketNoToiBon\TicketNoToiBon\obj\Debug\TicketNoToiBon.csprojResolveAssemblyReference.cache
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\TicketNoToiBon\TicketNoToiBon\obj\Debug\TicketNoToiBon.Form1.resources
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\TicketNoToiBon\TicketNoToiBon\obj\Debug\TicketNoToiBon.Properties.Resources.resources
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\TicketNoToiBon\TicketNoToiBon\obj\Debug\TicketNoToiBon.csproj.GenerateResource.Cache
+C:\Users\mds_userz\Desktop\通路API\其他\TicketNoToiBon\TicketNoToiBon\bin\Debug\TicketNoToiBon.exe.config
+C:\Users\mds_userz\Desktop\通路API\其他\TicketNoToiBon\TicketNoToiBon\obj\Debug\TicketNoToiBon.exe
+C:\Users\mds_userz\Desktop\通路API\其他\TicketNoToiBon\TicketNoToiBon\obj\Debug\TicketNoToiBon.pdb

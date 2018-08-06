@@ -1,0 +1,12 @@
+c:\users\mds_userz\documents\visual studio 2013\Projects\iBonTicketCount_API\iBonTicketCount_API\bin\iBonTicketCount_API.dll.config
+c:\users\mds_userz\documents\visual studio 2013\Projects\iBonTicketCount_API\iBonTicketCount_API\bin\iBonTicketCount_API.dll
+c:\users\mds_userz\documents\visual studio 2013\Projects\iBonTicketCount_API\iBonTicketCount_API\bin\iBonTicketCount_API.pdb
+c:\users\mds_userz\documents\visual studio 2013\Projects\iBonTicketCount_API\iBonTicketCount_API\obj\Debug\iBonTicketCount_API.csprojResolveAssemblyReference.cache
+c:\users\mds_userz\documents\visual studio 2013\Projects\iBonTicketCount_API\iBonTicketCount_API\obj\Debug\iBonTicketCount_API.dll
+c:\users\mds_userz\documents\visual studio 2013\Projects\iBonTicketCount_API\iBonTicketCount_API\obj\Debug\iBonTicketCount_API.pdb
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBonTicketCount_API\iBonTicketCount_API\bin\iBonTicketCount_API.dll.config
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBonTicketCount_API\iBonTicketCount_API\bin\iBonTicketCount_API.dll
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBonTicketCount_API\iBonTicketCount_API\bin\iBonTicketCount_API.pdb
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBonTicketCount_API\iBonTicketCount_API\obj\Debug\iBonTicketCount_API.csprojResolveAssemblyReference.cache
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBonTicketCount_API\iBonTicketCount_API\obj\Debug\iBonTicketCount_API.dll
+C:\Users\mds_userz\Desktop\新增資料夾 (2)\iBonTicketCount_API\iBonTicketCount_API\obj\Debug\iBonTicketCount_API.pdb

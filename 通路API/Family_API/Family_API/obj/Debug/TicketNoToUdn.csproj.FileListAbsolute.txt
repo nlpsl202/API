@@ -1,0 +1,10 @@
+c:\users\mds_userz\documents\visual studio 2013\Projects\TicketNoToUdn\TicketNoToUdn\bin\Debug\TicketNoToUdn.exe.config
+c:\users\mds_userz\documents\visual studio 2013\Projects\TicketNoToUdn\TicketNoToUdn\bin\Debug\TicketNoToUdn.exe
+c:\users\mds_userz\documents\visual studio 2013\Projects\TicketNoToUdn\TicketNoToUdn\bin\Debug\TicketNoToUdn.pdb
+c:\users\mds_userz\documents\visual studio 2013\Projects\TicketNoToUdn\TicketNoToUdn\bin\Debug\Newtonsoft.Json.dll
+c:\users\mds_userz\documents\visual studio 2013\Projects\TicketNoToUdn\TicketNoToUdn\obj\Debug\TicketNoToUdn.csprojResolveAssemblyReference.cache
+c:\users\mds_userz\documents\visual studio 2013\Projects\TicketNoToUdn\TicketNoToUdn\obj\Debug\TicketNoToUdn.Form1.resources
+c:\users\mds_userz\documents\visual studio 2013\Projects\TicketNoToUdn\TicketNoToUdn\obj\Debug\TicketNoToUdn.Properties.Resources.resources
+c:\users\mds_userz\documents\visual studio 2013\Projects\TicketNoToUdn\TicketNoToUdn\obj\Debug\TicketNoToUdn.csproj.GenerateResource.Cache
+c:\users\mds_userz\documents\visual studio 2013\Projects\TicketNoToUdn\TicketNoToUdn\obj\Debug\TicketNoToUdn.exe
+c:\users\mds_userz\documents\visual studio 2013\Projects\TicketNoToUdn\TicketNoToUdn\obj\Debug\TicketNoToUdn.pdb

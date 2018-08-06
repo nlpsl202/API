@@ -1,0 +1,10 @@
+C:\Users\mds_userz\Desktop\通路API\Gomaji_API\Gomaji_API\bin\Debug\TicketNoToUdn.exe.config
+C:\Users\mds_userz\Desktop\通路API\Gomaji_API\Gomaji_API\obj\Debug\TicketNoToUdn.exe
+C:\Users\mds_userz\Desktop\通路API\Gomaji_API\Gomaji_API\obj\Debug\TicketNoToUdn.pdb
+C:\Users\mds_userz\Desktop\通路API\Gomaji_API\Gomaji_API\bin\Debug\TicketNoToUdn.exe
+C:\Users\mds_userz\Desktop\通路API\Gomaji_API\Gomaji_API\bin\Debug\TicketNoToUdn.pdb
+C:\Users\mds_userz\Desktop\通路API\Gomaji_API\Gomaji_API\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mds_userz\Desktop\通路API\Gomaji_API\Gomaji_API\obj\Debug\Gomaji_API.csprojResolveAssemblyReference.cache
+C:\Users\mds_userz\Desktop\通路API\Gomaji_API\Gomaji_API\obj\Debug\Gomaji_API.Form1.resources
+C:\Users\mds_userz\Desktop\通路API\Gomaji_API\Gomaji_API\obj\Debug\TicketNoToUdn.Properties.Resources.resources
+C:\Users\mds_userz\Desktop\通路API\Gomaji_API\Gomaji_API\obj\Debug\Gomaji_API.csproj.GenerateResource.Cache

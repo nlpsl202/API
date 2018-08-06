@@ -1,0 +1,58 @@
+C:\Users\mds_userz\Desktop\Flora_API\Flora_API\bin\Flora_API.dll.config
+C:\Users\mds_userz\Desktop\Flora_API\Flora_API\bin\Flora_API.dll
+C:\Users\mds_userz\Desktop\Flora_API\Flora_API\bin\Flora_API.pdb
+C:\Users\mds_userz\Desktop\Flora_API\Flora_API\obj\Debug\Flora_API.csprojResolveAssemblyReference.cache
+C:\Users\mds_userz\Desktop\Flora_API\Flora_API\obj\Debug\Flora_API.dll
+C:\Users\mds_userz\Desktop\Flora_API\Flora_API\obj\Debug\Flora_API.pdb
+C:\Users\mds_userz\Desktop\悠遊卡公司審查API\Flora_API\Flora_API\bin\Flora_API.dll.config
+C:\Users\mds_userz\Desktop\悠遊卡公司審查API\Flora_API\Flora_API\bin\Flora_API.dll
+C:\Users\mds_userz\Desktop\悠遊卡公司審查API\Flora_API\Flora_API\bin\Flora_API.pdb
+C:\Users\mds_userz\Desktop\悠遊卡公司審查API\Flora_API\Flora_API\obj\Debug\Flora_API.csprojResolveAssemblyReference.cache
+C:\Users\mds_userz\Desktop\悠遊卡公司審查API\Flora_API\Flora_API\obj\Debug\Flora_API.dll
+C:\Users\mds_userz\Desktop\悠遊卡公司審查API\Flora_API\Flora_API\obj\Debug\Flora_API.pdb
+C:\Users\Ellen Lo\Desktop\Flora_API\Flora_API\bin\Flora_API.dll.config
+C:\Users\Ellen Lo\Desktop\Flora_API\Flora_API\bin\Flora_API.dll
+C:\Users\Ellen Lo\Desktop\Flora_API\Flora_API\bin\Flora_API.pdb
+C:\Users\Ellen Lo\Desktop\Flora_API\Flora_API\obj\Debug\Flora_API.csprojResolveAssemblyReference.cache
+C:\Users\Ellen Lo\Desktop\Flora_API\Flora_API\obj\Debug\Flora_API.dll
+C:\Users\Ellen Lo\Desktop\Flora_API\Flora_API\obj\Debug\Flora_API.pdb
+C:\Users\Ellen Lo\Desktop\Flora_API_final\Flora_API\bin\Flora_API.dll.config
+C:\Users\Ellen Lo\Desktop\Flora_API_final\Flora_API\bin\Flora_API.dll
+C:\Users\Ellen Lo\Desktop\Flora_API_final\Flora_API\bin\Flora_API.pdb
+C:\Users\Ellen Lo\Desktop\Flora_API_final\Flora_API\obj\Debug\Flora_API.csprojResolveAssemblyReference.cache
+C:\Users\Ellen Lo\Desktop\Flora_API_final\Flora_API\obj\Debug\Flora_API.dll
+C:\Users\Ellen Lo\Desktop\Flora_API_final\Flora_API\obj\Debug\Flora_API.pdb
+C:\Users\mds_userz\Desktop\通路API\Flora_API_final\Flora_API\bin\Flora_API.dll.config
+C:\Users\mds_userz\Desktop\通路API\Flora_API_final\Flora_API\bin\Flora_API.dll
+C:\Users\mds_userz\Desktop\通路API\Flora_API_final\Flora_API\bin\Flora_API.pdb
+C:\Users\mds_userz\Desktop\通路API\Flora_API_final\Flora_API\obj\Debug\Flora_API.csprojResolveAssemblyReference.cache
+C:\Users\mds_userz\Desktop\通路API\Flora_API_final\Flora_API\obj\Debug\Flora_API.dll
+C:\Users\mds_userz\Desktop\通路API\Flora_API_final\Flora_API\obj\Debug\Flora_API.pdb
+C:\Users\mds_userz\Desktop\通路API\Flora_API_final\Flora_API\bin\Newtonsoft.Json.dll
+C:\Users\mds_userz\Desktop\通路API\Flora_API_final\Flora_API\bin\System.Net.Http.Formatting.dll
+C:\Users\mds_userz\Desktop\通路API\Flora_API_final\Flora_API\bin\System.Web.Http.dll
+C:\Users\mds_userz\Desktop\通路API\Flora_API_final\Flora_API\bin\System.Web.Http.WebHost.dll
+C:\Users\mds_userz\Desktop\通路API\Flora_API_final\Flora_API\bin\Newtonsoft.Json.xml
+C:\Users\mds_userz\Desktop\通路API\Flora_API_final\Flora_API\bin\System.Net.Http.Formatting.xml
+C:\Users\mds_userz\Desktop\通路API\Flora_API_final\Flora_API\bin\System.Web.Http.xml
+C:\Users\mds_userz\Desktop\通路API\Flora_API_final\Flora_API\bin\System.Web.Http.WebHost.xml
+C:\Users\mds_userz\Desktop\通路API\Flora_API_final\Flora_API\bin\zh-Hant\System.Net.Http.Formatting.resources.dll
+C:\Users\mds_userz\Desktop\通路API\Flora_API_final\Flora_API\bin\zh-Hant\System.Web.Http.resources.dll
+C:\Users\mds_userz\Desktop\通路API\Flora_API_final\Flora_API\bin\zh-Hant\System.Web.Http.WebHost.resources.dll
+C:\Users\mds_userz\Desktop\通路API\Flora_API\Flora_API\bin\Flora_API.dll.config
+C:\Users\mds_userz\Desktop\通路API\Flora_API\Flora_API\bin\Flora_API.dll
+C:\Users\mds_userz\Desktop\通路API\Flora_API\Flora_API\bin\Flora_API.pdb
+C:\Users\mds_userz\Desktop\通路API\Flora_API\Flora_API\bin\Newtonsoft.Json.dll
+C:\Users\mds_userz\Desktop\通路API\Flora_API\Flora_API\bin\System.Net.Http.Formatting.dll
+C:\Users\mds_userz\Desktop\通路API\Flora_API\Flora_API\bin\System.Web.Http.dll
+C:\Users\mds_userz\Desktop\通路API\Flora_API\Flora_API\bin\System.Web.Http.WebHost.dll
+C:\Users\mds_userz\Desktop\通路API\Flora_API\Flora_API\bin\Newtonsoft.Json.xml
+C:\Users\mds_userz\Desktop\通路API\Flora_API\Flora_API\bin\System.Net.Http.Formatting.xml
+C:\Users\mds_userz\Desktop\通路API\Flora_API\Flora_API\bin\System.Web.Http.xml
+C:\Users\mds_userz\Desktop\通路API\Flora_API\Flora_API\bin\System.Web.Http.WebHost.xml
+C:\Users\mds_userz\Desktop\通路API\Flora_API\Flora_API\bin\zh-Hant\System.Net.Http.Formatting.resources.dll
+C:\Users\mds_userz\Desktop\通路API\Flora_API\Flora_API\bin\zh-Hant\System.Web.Http.resources.dll
+C:\Users\mds_userz\Desktop\通路API\Flora_API\Flora_API\bin\zh-Hant\System.Web.Http.WebHost.resources.dll
+C:\Users\mds_userz\Desktop\通路API\Flora_API\Flora_API\obj\Debug\Flora_API.csprojResolveAssemblyReference.cache
+C:\Users\mds_userz\Desktop\通路API\Flora_API\Flora_API\obj\Debug\Flora_API.dll
+C:\Users\mds_userz\Desktop\通路API\Flora_API\Flora_API\obj\Debug\Flora_API.pdb
