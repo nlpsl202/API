@@ -42,15 +42,19 @@
             this.label5 = new System.Windows.Forms.Label();
             this.GetTickets_timer = new System.Windows.Forms.Timer(this.components);
             this.VerifyTickets_timer = new System.Windows.Forms.Timer(this.components);
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // GetTickets_API_Start_btn
             // 
-            this.GetTickets_API_Start_btn.Location = new System.Drawing.Point(352, 57);
+            this.GetTickets_API_Start_btn.Location = new System.Drawing.Point(359, 57);
             this.GetTickets_API_Start_btn.Name = "GetTickets_API_Start_btn";
             this.GetTickets_API_Start_btn.Size = new System.Drawing.Size(104, 45);
             this.GetTickets_API_Start_btn.TabIndex = 0;
@@ -104,9 +108,9 @@
             this.checkBox2.Location = new System.Drawing.Point(234, 69);
             this.checkBox2.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(111, 22);
+            this.checkBox2.Size = new System.Drawing.Size(121, 22);
             this.checkBox2.TabIndex = 49;
-            this.checkBox2.Text = "B011M9SZ";
+            this.checkBox2.Text = "B01FGNMY";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // label3
@@ -166,47 +170,93 @@
             // 
             this.VerifyTickets_timer.Tick += new System.EventHandler(this.VerifyTickets_timer_Tick);
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(27, 135);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 18);
-            this.label6.TabIndex = 61;
-            this.label6.Text = "label6";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(27, 355);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 18);
-            this.label7.TabIndex = 62;
-            this.label7.Text = "label7";
-            // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(30, 166);
+            this.textBox1.Location = new System.Drawing.Point(92, 166);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 29);
             this.textBox1.TabIndex = 63;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(167, 166);
+            this.textBox2.Location = new System.Drawing.Point(217, 166);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 29);
             this.textBox2.TabIndex = 64;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(332, 158);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(67, 45);
+            this.button1.TabIndex = 65;
+            this.button1.Text = "GO";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(27, 145);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(80, 18);
+            this.label6.TabIndex = 66;
+            this.label6.Text = "手動抓取";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(197, 171);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(17, 18);
+            this.label7.TabIndex = 67;
+            this.label7.Text = "~";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(27, 171);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(62, 18);
+            this.label8.TabIndex = 68;
+            this.label8.Text = "日期：";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(27, 204);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(174, 18);
+            this.label9.TabIndex = 69;
+            this.label9.Text = "格式：YYYY/MM/DD";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(406, 171);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(50, 18);
+            this.label10.TabIndex = 70;
+            this.label10.Text = "完成!";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(585, 540);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.VerifyTickets_API_Stop_btn);
             this.Controls.Add(this.VerifyTickets_API_Start_btn);
@@ -240,10 +290,14 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Timer GetTickets_timer;
         private System.Windows.Forms.Timer VerifyTickets_timer;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }
 

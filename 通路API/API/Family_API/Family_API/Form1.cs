@@ -25,14 +25,17 @@ namespace Family_API
     public partial class Form1 : Form
     {
         static string StartupPath = System.Windows.Forms.Application.StartupPath;
-        IniFile ini;
+        private IniFile ini;
+        private WriteLog writeLog;
         public Form1()
         {
             InitializeComponent();
             timeinitial();
             label3.Text = "";
             label5.Text = "";
+            label10.Visible = false;
             ini = new IniFile(StartupPath + "\\Setup.ini");
+            writeLog = new WriteLog();
         }
 
         private void timeinitial()
@@ -166,7 +169,6 @@ namespace Family_API
             using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
             {
                 var result = streamReader.ReadToEnd();
-                label6.Text = result;
                 string sql = "";
                 try
                 {
@@ -309,7 +311,6 @@ namespace Family_API
             using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
             {
                 var result = streamReader.ReadToEnd();
-                label7.Text = result;
                 string sql = "";
                 try
                 {
@@ -346,5 +347,168 @@ namespace Family_API
             VerifyTickets_API_Stop_btn.Enabled = false;
         }
         #endregion
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (!checkBox1.Checked && !checkBox2.Checked && !checkBox3.Checked)
+            {
+                MessageBox.Show("請勾選商品代碼");
+                return;
+            }
+            string Products_Code = string.Empty;
+            if (checkBox1.Checked)
+            {
+                if (Products_Code != string.Empty)
+                {
+                    Products_Code += "|" + checkBox1.Text;
+                }
+                else
+                {
+                    Products_Code += checkBox1.Text;
+                }
+            }
+            if (checkBox2.Checked)
+            {
+                if (Products_Code != string.Empty)
+                {
+                    Products_Code += "|" + checkBox2.Text;
+                }
+                else
+                {
+                    Products_Code += checkBox2.Text;
+                }
+            }
+            if (checkBox3.Checked)
+            {
+                if (Products_Code != string.Empty)
+                {
+                    Products_Code += "|" + checkBox3.Text;
+                }
+                else
+                {
+                    Products_Code += checkBox3.Text;
+                }
+            }
+            DateTime dtS = DateTime.Parse(textBox1.Text.Trim() + " 00:00:00");
+            DateTime dtE = DateTime.Parse(textBox2.Text.Trim() + " 00:00:00");
+            int days = new TimeSpan(dtE.Ticks - dtS.Ticks).Days;
+            GetTickets ticket = new GetTickets();
+            for (int i = 0; i <= days; i++)
+            {
+                ticket.TR_TYPE = "001";
+                ticket.PASS_CODE = "23740512" + "962001";
+                ticket.PRODUCTS_CODE = Products_Code;
+                ticket.ORDERS_STIME = String.Format("{0:yyyy/MM/dd}", dtS) + " 00:00:00";
+                ticket.ORDERS_ETIME = String.Format("{0:yyyy/MM/dd}", dtS) + " 23:59:59";
+                    
+                var httpWebRequest = (HttpWebRequest)WebRequest.Create(ConfigurationManager.AppSettings["GetTicketsURL"].ToString());
+                //httpWebRequest.ContentType = "application/json; charset=utf-8";
+                httpWebRequest.Method = "POST";
+
+                using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+                {
+                    streamWriter.Write(new JavaScriptSerializer().Serialize(ticket));
+                }
+
+                var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+
+                using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+                {
+                    var result = streamReader.ReadToEnd();
+                    string sql = "";
+                    try
+                    {
+                        GetTicketsResp deserialized = JsonConvert.DeserializeObject<GetTicketsResp>(result);
+                        if (deserialized.STATUS == "00")
+                        {
+                            using (SqlConnection _con = new SqlConnection(ConfigurationManager.ConnectionStrings["ApplicationServices"].ConnectionString))
+                            {
+                                _con.Open();
+                                string TK_STATUS = string.Empty;
+                                foreach (GetTicketsDataResp resp in deserialized.TICKETS)
+                                {
+                                    if (!GetDataDB(resp.QR_CODE, resp.ORDERS_NO))
+                                    {
+                                        if (resp.ORDER_TYPE == "R")
+                                        {
+                                            TK_STATUS = "X";
+                                        }
+                                        else
+                                        {
+                                            TK_STATUS = "1";
+                                        }
+                                        sql = string.Format(@"insert into cTicketWhitelist
+                                                        (TK_QRCODE
+                                                        ,TK_ORDERNO
+                                                        ,TK_PRICETYPES
+                                                        ,TK_PRICE
+                                                        ,TK_ORDERDT
+                                                        ,TK_PLACE
+                                                        ,TK_STATUS
+                                                        ,TK_USED_DT
+                                                        ,TK_END_DT
+                                                        ,TK_FEEDBACK
+                                                        ,TK_FEEDBACKMEMO
+                                                        ,CREATEDT
+                                                        ,CREATEID
+                                                        ,MODIFYDT
+                                                        ,MODIFYID) 
+                                                         values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}','{14}')"
+                                                                , resp.QR_CODE
+                                                                , resp.ORDERS_NO
+                                                                , resp.PRICE_NAME
+                                                                , Convert.ToInt32(resp.PRICE)
+                                                                , resp.ORDER_DATETIME
+                                                                , "family"
+                                                                , TK_STATUS //1:售出  2:已使用  X:作廢
+                                                                , ""
+                                                                , ""
+                                                                , ""
+                                                                , ""
+                                                                , string.Format("{0:yyyy-MM-dd HH:mm:ss}", DateTime.Now)
+                                                                , "admin"
+                                                                , null
+                                                                , null);
+                                        SqlCommand cmd = new SqlCommand(sql, _con);
+                                        cmd.ExecuteNonQuery();
+                                    }
+                                    else
+                                    {
+                                        if (resp.ORDER_TYPE == "R")
+                                        {
+                                            TK_STATUS = "X";
+                                            sql = string.Format(@"update cTicketWhitelist
+                                                              set TK_ORDERDT='{0}',
+                                                                  TK_STATUS='{1}',
+                                                                  MODIFYDT='{2}',
+                                                                  MODIFYID='{3}'
+                                                              where TK_QRCODE='{4}'
+                                                              and TK_ORDERNO='{5}'
+                                                              and TK_STATUS<>'X'"
+                                                                  , resp.ORDER_DATETIME
+                                                                  , TK_STATUS
+                                                                  , string.Format("{0:yyyy-MM-dd HH:mm:ss}", DateTime.Now)
+                                                                  , "family"
+                                                                  , resp.QR_CODE
+                                                                  , resp.ORDERS_NO);
+                                            SqlCommand cmd = new SqlCommand(sql, _con);
+                                            cmd.ExecuteNonQuery();
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        dtS = dtS.AddDays(1);
+                        writeLog.Write_Log("GetTickets " + ticket.ORDERS_STIME + " ~ " + ticket.ORDERS_ETIME + ": ErrCode = " + deserialized.STATUS + " , RowCount = " + (deserialized.TICKETS!=null ? deserialized.TICKETS.Count():0));
+                    }
+                    catch (Exception ex)
+                    {
+                        return;
+                    }
+                }
+            }
+            label10.Visible = true;
+            ini.IniWriteValue("Setup", "LastTime", String.Format("{0:yyyy/MM/dd}", dtS) + " 00:00:00");//儲存最後一次排程的時間
+        }
     }
 }

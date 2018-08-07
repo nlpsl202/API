@@ -38,3 +38,6 @@ C:\Users\mds_userz\Desktop\通路API\iBon_API\iBon_API\obj\Debug\iBon_API.csproj
 C:\Users\mds_userz\Desktop\通路API\iBon_API\iBon_API\obj\Debug\iBon_API.Form1.resources
 C:\Users\mds_userz\Desktop\通路API\iBon_API\iBon_API\obj\Debug\iBon_API.Properties.Resources.resources
 C:\Users\mds_userz\Desktop\通路API\iBon_API\iBon_API\obj\Debug\iBon_API.csproj.GenerateResource.Cache
+C:\Users\mds_userz\Desktop\通路API\API\iBon_API\iBon_API\bin\Debug\iBon_API.exe.config
+C:\Users\mds_userz\Desktop\通路API\API\iBon_API\iBon_API\obj\Debug\iBon_API.exe
+C:\Users\mds_userz\Desktop\通路API\API\iBon_API\iBon_API\obj\Debug\iBon_API.pdb

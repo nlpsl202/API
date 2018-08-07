@@ -27,27 +27,28 @@ namespace iBon_API
         static string StartupPath = System.Windows.Forms.Application.StartupPath;
         public ServiceReference1.ibonTicketSoapClient Svc = new ServiceReference1.ibonTicketSoapClient();
         int block;
-        IniHelper ini;
+        private IniFile ini;
+        private WriteLog writeLog;
         public Form1()
         {
             InitializeComponent();
+            timeinitial();
             ConnectionStatus_lbl.Text = "";
             TotalCount_lbl.Text = "";
             BlockCount_lbl.Text = "";
+            block_lbl.Text = "";
             label12.Text = "";
             label13.Text = "";
-            block_lbl.Text = "";
-            textBox1.Text = "2018/05/22 00:00:00";
-            textBox2.Text = "2018/06/28 23:59:59";
-            ini = new IniHelper(StartupPath + "\\Setup.ini");
+            label15.Text = "";
+            ini = new IniFile(StartupPath + "\\Setup.ini");
+            writeLog = new WriteLog();
             if (File.Exists(StartupPath + "\\Setup.ini"))
             {
-                if (ini.ReadValue("Setup", "block") != null && ini.ReadValue("Setup", "block") != "")
-                    block = Convert.ToInt32(ini.ReadValue("Setup", "block"));
+                if (ini.IniReadValue("Setup", "block") != null && !ini.IniReadValue("Setup", "block").Equals(""))
+                    block = Convert.ToInt32(ini.IniReadValue("Setup", "block"));
                 else
                     block = 1;
             }
-            timeinitial();
         }
 
         private void timeinitial()
@@ -128,11 +129,6 @@ namespace iBon_API
 
         private void GetTicketData_timer_Tick(object sender, EventArgs e)
         {
-            DateTime dt = DateTime.Now;
-            if (File.Exists(StartupPath + "\\Setup.ini"))
-            {
-                dt = DateTime.Parse(ini.ReadValue("Setup", "LastTime"));
-            }
             string Products_Code = string.Empty;
             if (checkBox1.Checked && !checkBox2.Checked)
             {
@@ -149,8 +145,8 @@ namespace iBon_API
             GetTicketData ticket = new GetTicketData
             {
                 Products_Code = Products_Code,
-                Orders_STIME = "2018/05/22 00:00:00",
-                Orders_ETIME = "",
+                Orders_STIME = "2018/04/01 00:00:00",
+                Orders_ETIME = "2019/04/01 00:00:00",
                 Block = block
             };
             string ResponseData = Svc.GetTicketData("[" + JsonConvert.SerializeObject(ticket) + "]");
@@ -159,11 +155,6 @@ namespace iBon_API
             {
                 block_lbl.Text = block.ToString();
                 var deserialized = JsonConvert.DeserializeObject<IEnumerable<GetTicketDataResp>>(ResponseData);
-                if (deserialized.Count<GetTicketDataResp>() == 300)
-                {
-                    block++;
-                    ini.WriteValue("Setting", "block", block.ToString());
-                }
                 using (SqlConnection _con = new SqlConnection(ConfigurationManager.ConnectionStrings["ApplicationServices"].ConnectionString))
                 {
                     _con.Open();
@@ -215,9 +206,37 @@ namespace iBon_API
                             SqlCommand cmd = new SqlCommand(sql, _con);
                             cmd.ExecuteNonQuery();
                         }
+                        else
+                        {
+                            if (resp.Order_Type == "R")
+                            {
+                                TK_STATUS = "X";
+                                sql = string.Format(@"update cTicketWhitelist
+                                                              set TK_ORDERDT='{0}',
+                                                                  TK_STATUS='{1}',
+                                                                  MODIFYDT='{2}',
+                                                                  MODIFYID='{3}'
+                                                              where TK_QRCODE='{4}'
+                                                              and TK_ORDERNO='{5}'
+                                                              and TK_STATUS<>'X'"
+                                                        , resp.Order_datetime
+                                                        , TK_STATUS
+                                                        , string.Format("{0:yyyy-MM-dd HH:mm:ss}", DateTime.Now)
+                                                        , "admin"
+                                                        , resp.QR_Code
+                                                        , resp.Orders_No);
+                                SqlCommand cmd = new SqlCommand(sql, _con);
+                                cmd.ExecuteNonQuery();
+                            }
+                        }
                     }
                 }
-                ini.WriteValue("Setup", "LastTime", String.Format("{0:yyyy/MM/dd HH:mm:ss}", DateTime.Now));//儲存最後一次排程的時間
+                if (deserialized.Count<GetTicketDataResp>() == 300)
+                {
+                    block++;
+                    ini.IniWriteValue("Setting", "block", block.ToString());
+                }
+                ini.IniWriteValue("Setup", "LastTime", String.Format("{0:yyyy/MM/dd HH:mm:ss}", DateTime.Now));//儲存最後一次排程的時間
             }
             catch (Exception ex)
             {
@@ -356,5 +375,136 @@ namespace iBon_API
             }
         }
         #endregion
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (!checkBox1.Checked && !checkBox2.Checked)
+            {
+                MessageBox.Show("請勾選商品代碼");
+                return;
+            }
+            string Products_Code = string.Empty;
+            if (checkBox1.Checked && !checkBox2.Checked)
+            {
+                Products_Code += checkBox1.Text;
+            }
+            else if (checkBox1.Checked && checkBox2.Checked)
+            {
+                Products_Code += checkBox1.Text + "|" + checkBox2.Text;
+            }
+            else if (!checkBox1.Checked && checkBox2.Checked)
+            {
+                Products_Code += checkBox2.Text;
+            }
+            GetTicketData ticket = new GetTicketData();
+            int blocks = 0;
+
+            GetTicketCount ticketCount = new GetTicketCount
+            {
+                Products_Code = Products_Code,
+                Orders_STIME = textBox1.Text.Trim() + " 00:00:00",
+                Orders_ETIME = textBox2.Text.Trim() + " 23:59:59",
+            };
+            string ResponseDataCount = Svc.GetTicketCount("[" + JsonConvert.SerializeObject(ticketCount) + "]");
+            var deserializedCount = JsonConvert.DeserializeObject<IEnumerable<GetTicketCountResp>>(ResponseDataCount);
+            foreach (GetTicketCountResp resp in deserializedCount)
+            {
+                blocks = resp.BlockCount;
+            }
+
+            for (int i = 1; i <= blocks; i++)
+            {
+                ticket.Products_Code=Products_Code;
+                ticket.Orders_STIME=textBox1.Text.Trim() + " 00:00:00";
+                ticket.Orders_ETIME=textBox2.Text.Trim() + " 23:59:59";
+                ticket.Block=i;
+                string ResponseData = Svc.GetTicketData("[" + JsonConvert.SerializeObject(ticket) + "]");
+                string sql = "";
+                try
+                {
+                    var deserialized = JsonConvert.DeserializeObject<IEnumerable<GetTicketDataResp>>(ResponseData);
+                    using (SqlConnection _con = new SqlConnection(ConfigurationManager.ConnectionStrings["ApplicationServices"].ConnectionString))
+                    {
+                        _con.Open();
+                        foreach (GetTicketDataResp resp in deserialized)
+                        {
+                            string TK_STATUS = string.Empty;
+                            if (!GetDataDB(resp.QR_Code, resp.Orders_No))
+                            {
+                                if (resp.Order_Type == "R")
+                                {
+                                    TK_STATUS = "X";
+                                }
+                                else
+                                {
+                                    TK_STATUS = "1";
+                                }
+                                sql = string.Format(@"insert into cTicketWhitelist
+                                                    (TK_QRCODE
+                                                    ,TK_ORDERNO
+                                                    ,TK_PRICETYPES
+                                                    ,TK_PRICE
+                                                    ,TK_ORDERDT
+                                                    ,TK_PLACE
+                                                    ,TK_STATUS
+                                                    ,TK_USED_DT
+                                                    ,TK_END_DT
+                                                    ,TK_FEEDBACK
+                                                    ,TK_FEEDBACKMEMO
+                                                    ,CREATEDT
+                                                    ,CREATEID
+                                                    ,MODIFYDT
+                                                    ,MODIFYID) 
+                                                     values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}','{14}')"
+                                                        , resp.QR_Code
+                                                        , resp.Orders_No
+                                                        , resp.PriceTypes
+                                                        , Convert.ToInt32(resp.Price)
+                                                        , resp.Order_datetime
+                                                        , "ibon"
+                                                        , TK_STATUS
+                                                        , ""
+                                                        , ""
+                                                        , ""
+                                                        , ""
+                                                        , string.Format("{0:yyyy-MM-dd HH:mm:ss}", DateTime.Now)
+                                                        , "admin"
+                                                        , null
+                                                        , null);
+                                SqlCommand cmd = new SqlCommand(sql, _con);
+                                cmd.ExecuteNonQuery();
+                            }
+                            else
+                            {
+                                if (resp.Order_Type == "R")
+                                {
+                                    TK_STATUS = "X";
+                                    sql = string.Format(@"update cTicketWhitelist
+                                                              set TK_ORDERDT='{0}',
+                                                                  TK_STATUS='{1}',
+                                                                  MODIFYDT='{2}',
+                                                                  MODIFYID='{3}'
+                                                              where TK_QRCODE='{4}'
+                                                              and TK_ORDERNO='{5}'
+                                                              and TK_STATUS<>'X'"
+                                                            , resp.Order_datetime
+                                                            , TK_STATUS
+                                                            , string.Format("{0:yyyy-MM-dd HH:mm:ss}", DateTime.Now)
+                                                            , "admin"
+                                                            , resp.QR_Code
+                                                            , resp.Orders_No);
+                                    SqlCommand cmd = new SqlCommand(sql, _con);
+                                    cmd.ExecuteNonQuery();
+                                }
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    return;
+                }
+            }
+        }
     }
 }
